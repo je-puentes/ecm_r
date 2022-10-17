@@ -1,0 +1,14 @@
+library(devtools)
+install_github("je-puentes/ecm_r")
+
+
+get_font()
+
+data_example <- as_tibble(cbind(x = runif(15,0,1), y = runif(15,0,1), z = as.character(rbinom(15, size = 1, prob = 0.5 ))))
+
+
+ggplot(data_example, aes(x = x, y = y, color = z))+
+  geom_point() +
+  labs(title = "Graph title", subtitle = "Subtitle", caption = "Fonte, andajdl") +
+  theme_ecm()
+
