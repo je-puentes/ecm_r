@@ -12,6 +12,7 @@ Neste pacote, apenas há a possibilidade de adicionar um tema do Economia Mainst
 Para instalar o pacote basta dar os seguintes comandos:
 
 library(devtools)
+
 install_github("je-puentes/ecm_r")
  
 Uma vez instalado. Basta chamar o pacote com
